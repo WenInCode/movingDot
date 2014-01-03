@@ -2,3 +2,5 @@ Project Name: movingDot
 Author: Tyler Wendlandt
 
 This is a simple SDL/C++ project where you can move a dot sprite around on the screen. Gravity is applied. Use arrow cursors to move and space to jump.
+
+** As I am currently learning SDL, much of this code is originally created by LazyFoo (website: Lazyfoo.net). As I gain more understanding of SDL I will alter the code according to my personal preferences. **
