@@ -3,4 +3,11 @@ Author: Tyler Wendlandt
 
 This is a simple SDL/C++ project where you can move a dot sprite around on the screen. Gravity is applied. Use arrow cursors to move and space to jump.
 
+UPDATES:
+5/1/2014 - fixed environment/sprite collisions. The sprite now recognizes whether it is landing on a surface or bouncing off.
+
+TODO:
+Next few days - seperate environment creation from main.
+			  - Create a basic enemy class with simplistic motion and recognition of it's environment. Either have it chase the dot sprite or have it move in a static fashion. 
+
 ** As I am currently learning SDL, much of this code is originally created by LazyFoo (website: Lazyfoo.net). As I gain more understanding of SDL I will alter the code according to my personal preferences. **

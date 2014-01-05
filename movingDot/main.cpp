@@ -110,17 +110,16 @@ int main(int argc, const char * argv[])
             // Event handler
             SDL_Event e;
             
-            SDL_Rect wall;
-            wall.x = 0;
-            wall.y = 400;
-            wall.w = 640;
-            wall.h = 50;
+            SDL_Rect walls[2];
+            walls[0].x = 0;
+            walls[0].y = 400;
+            walls[0].w = 640;
+            walls[0].h = 20;
             
-            SDL_Rect wall1;
-            wall1.x = 0;
-            wall1.y = 350;
-            wall1.w = 100;
-            wall1.h = 20;
+            walls[1].x = 0;
+            walls[1].y = 350;
+            walls[1].w = 100;
+            walls[1].h  = 20;
             
             // Game loop
             while (!quit)
@@ -139,7 +138,7 @@ int main(int argc, const char * argv[])
                 }
                 
                 // Move the dot
-                dot.move(wall);
+                dot.move(walls);
                 
                 //Clear the screen
                 SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
@@ -147,11 +146,11 @@ int main(int argc, const char * argv[])
                 
                 // Redner the wall
                 SDL_SetRenderDrawColor(gRenderer, 0x00, 0x00, 0x00, 0xFF);
-                SDL_RenderDrawRect(gRenderer, &wall);
+                SDL_RenderDrawRect(gRenderer, &walls[0]);
                 
                 // Redner the wall
                 SDL_SetRenderDrawColor(gRenderer, 0x00, 0x00, 0x00, 0xFF);
-                SDL_RenderDrawRect(gRenderer, &wall1);
+                SDL_RenderDrawRect(gRenderer, &walls[1]);
                 
                 //Render objects
                 dot.render();

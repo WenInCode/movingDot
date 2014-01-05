@@ -23,10 +23,10 @@ public:
     static const int DOT_HEIGHT = 20;
     
     // Maximum axis velocity of the dot
-    static const int DOT_VEL = 10;
+    static const int DOT_VEL = 5;
     
     // Dots initial jump speed
-    static const int DOT_JUMP_VEL = -15;
+    static const int DOT_JUMP_VEL = -10;
     static const int DOT_GRAVITY = 5;
     
     // Initialize the variables
@@ -36,7 +36,7 @@ public:
     void handleEvent( SDL_Event e );
     
     // Moves the dot
-    void move(SDL_Rect& wall);
+    void move(SDL_Rect walls[]);
     
     bool loadMedia();
     
@@ -48,13 +48,13 @@ public:
 private:
     
     // The X and Y offsets of the dot
-    int mPosX, mPosY;
+    float mPosX, mPosY;
     
     //The velocity of the dot
-    int mVelx, mVely;
+    float mVelx, mVely;
     
     // Calculate the vertical velocity
-    int calcVelY();
+    float calcVelY();
     
     // Timer used for vertical velocity
     float startTime;

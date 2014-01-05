@@ -14,7 +14,8 @@
 
 class CollisionDetection {
 public:
-    bool checkCollision( SDL_Rect a, SDL_Rect b);
+    bool checkVerticalCollision( SDL_Rect a, SDL_Rect b);
+    bool checkHorizontalCollision( SDL_Rect a, SDL_Rect b);
 };
 
 #endif /* defined(__movingDot__CollisionDetection__) */
