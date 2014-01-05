@@ -1,7 +1,7 @@
 Project Name: movingDot
 Author: Tyler Wendlandt
 
-This is a simple SDL/C++ project where you can move a dot sprite around on the screen. Gravity is applied. Use arrow cursors to move and space to jump.
+This is a simple SDL/C++ project where you can move a dot sprite around on the screen. Gravity is applied and collision detection is enabled. This project will grow slowly but steadily into a more full game. Once I get the basic functionality down I'll put some time into making this a small but fun SDL game. This project is created more for learning purposes - and it's something I enjoy. lastly, Use arrow cursors to move and space to jump.
 
 UPDATES:
 5/1/2014 - fixed environment/sprite collisions. The sprite now recognizes whether it is landing on a surface or bouncing off.
